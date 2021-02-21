@@ -1,0 +1,60 @@
+.footer{
+    padding: 9.3rem 0 15.1rem;
+    
+    background-color: #262b2e;
+
+    text-align: center;
+
+    @media #{$notebook}{
+        padding: 8rem 0;
+    }
+
+    @media #{$tablet}{
+        padding: 6rem 0;
+    }
+
+    @media #{$mobile-small}{
+        padding: 4rem 0;
+    }
+}
+
+.footer__title{
+    font-family: $raleway;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: rgba($white, 0.8);
+}
+
+.footer__social{
+    margin-top: 1.9rem;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link{
+    width: 4.6rem;
+    height: 4rem;
+
+    margin-right: 0.7rem;
+
+    background-color: rgba(#6c6e6f, 0.4);
+
+    font-size: 2.35rem;
+    line-height: 4rem;
+
+    color: #bbb8b9;
+
+    transition: all .3s linear;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        color: $black;
+        background-color: $light-blue;
+    }
+}

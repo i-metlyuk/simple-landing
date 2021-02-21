@@ -1,0 +1,46 @@
+@import "vars";
+@import "vendor/reset";
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $dark-white;
+    font-family: $merriweather;
+    font-size: 1.6rem;
+    letter-spacing: 0.11rem;
+    line-height: 1;
+    color: $black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/about";
+@import "blocks/works";
+@import "blocks/team";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/embed";
+@import "blocks/footer";
+@import "blocks/modals";

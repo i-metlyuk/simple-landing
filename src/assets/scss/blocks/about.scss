@@ -1,0 +1,147 @@
+.about{
+    padding: 12.8rem 0 16.6rem 0;
+
+    background-color: #f8fafa;
+
+    @media #{$notebook}{
+        padding: 9rem 0;
+    }
+
+    @media #{$mobile}{
+        padding: 6rem 0;
+    }
+
+    @media #{$mobile-small}{
+        padding: 4rem 0;
+    }
+}
+
+.about__title{
+    font-size: 3.8rem;
+    font-family: $montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: rgba($black, .9);
+
+    text-align: center;
+
+    @media #{$tablet}{
+        font-size: 3rem;
+    }
+}
+
+.about__subtitle{
+    margin-top: 1rem;
+
+    text-transform: uppercase;
+    font-size: 1.8rem;
+
+    color: rgba($black, .62);
+
+    text-align: center;
+
+    @media #{$tablet}{
+        font-size: 1.4rem;
+    }
+}
+
+.about__inner{
+    margin-top: 14.5rem;
+
+    display: flex;
+    justify-content: center;
+
+    @media #{$tablet}{
+        margin-top: 9rem;
+    }
+
+    @media #{$mobile}{
+        display: block;
+
+        margin-top: 6rem;
+    }
+}
+
+.about__image{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    box-shadow: 0px 0px 30px rgba($black, .13);
+
+    @media #{$mobile}{
+        margin: 0 auto;
+    }
+}
+
+.about__sections{
+    margin-left: 16rem;
+
+    @media #{$tablet}{
+        margin-left: 3rem;
+    }
+
+    @media #{$mobile}{
+        margin: 3rem 0 0;
+    }
+}
+
+.about__item{
+    max-width: 50rem;
+
+    margin-bottom: 4.5rem;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media #{$mobile}{
+        margin-bottom: 2.5rem;
+        
+        max-width: none;
+    }
+}
+
+.about__item-title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: rgba($black, .62);
+
+    margin-bottom: 3rem;
+
+    @media #{$tablet}{
+        font-size: 1.5rem;
+    }
+
+    @media #{$mobile}{
+        margin-bottom: 2rem;
+
+        text-align: center;
+    }
+}
+
+.about__item-text{
+    font-family: $raleway;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    color: rgba($black, .74);
+
+    margin-bottom: 4rem;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media #{$tablet}{
+        font-size: 1.2rem;
+    }
+
+    @media #{$mobile}{
+        margin-bottom: 2rem;
+    }
+}

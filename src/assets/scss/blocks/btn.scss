@@ -1,0 +1,69 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: $montserrat;
+    font-size: 1.8rem;
+    color: $black;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+  
+.btn--gray {
+    margin: 14.5rem 0 6rem 0;
+
+    padding: 0.85em 2.72em;
+    color: rgba($black, .75);
+    border: 2px solid rgba($black, .5);
+    border-radius: 2px;
+    opacity: 0.75;
+
+    transition: all .2s linear;
+
+    &:hover{
+        box-shadow: 0 0 10px darken(rgba($black, .5), 10%);
+    }
+
+    @media #{$mobile}{
+        margin-top: 10rem;
+
+        font-size: 1.4rem;
+    }
+
+    @media #{$mobile-small}{
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+}
+
+.btn--aqua {
+    margin: 3.8rem 0;
+
+    padding: 1.111111111em 2.055555556em;
+
+    text-transform: uppercase;
+    
+    background-color: $light-blue;
+    color: rgba($black, .7);
+    
+    border-radius: 2px;
+
+    transition: all .2s linear;
+
+    &:hover{
+        box-shadow: 0 0 15px darken(rgba($black, .5), 10%);
+        background-color: darken($light-blue, 10%);
+    }
+
+    @media #{$mobile-small}{
+        font-size: 1.3rem;
+    }
+}

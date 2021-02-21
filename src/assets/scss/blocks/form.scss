@@ -1,0 +1,74 @@
+.form{
+    padding: 4.7rem 3.1rem 0;
+
+    background-color: rgba($dark-blue, .71);
+
+    width: 54%;
+    max-width: 61.4rem;
+
+    @media #{$mobile}{
+        width: 80%;
+        max-width: none;
+
+        margin: 0 auto;
+    }
+
+    @media #{$mobile-small}{
+        width: 100%;
+    }
+}
+
+.form__group{
+    margin-bottom: 3rem;
+    
+    position: relative;
+
+    &--last{
+        margin-bottom: 0;
+    }
+}
+
+.form__control{
+    display: block;
+    width: 100%;
+    padding: 0 0 1.9rem;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba($white, .6);;
+    border-radius: 0;
+    box-shadow: none;
+
+    font-family: $raleway;
+    font-size: 1.5rem;
+    color: $white;
+
+    &::placeholder{
+        
+        color: rgba($white, .6);
+    }
+
+    &:focus + .form__line{
+        width: 100%;
+    }
+
+    &--textarea{
+        height: 10.4rem;
+        overflow: hidden;
+        resize: none;
+    }
+}
+
+.form__line{
+    width: 0;
+    height: 1px;
+
+    background-color: $white;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: width .2s linear;
+}

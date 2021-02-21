@@ -1,0 +1,95 @@
+.contacts{
+    padding: 12.2rem 0;
+    position: relative;
+    
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.67;
+        background-color: $dark-white;
+        background: url("../images/contacts.png") center no-repeat;
+        background-size: cover;
+    }
+    
+    @media #{$notebook}{
+        padding: 9rem 0;
+    }
+
+    @media #{$mobile}{
+        padding: 6rem 0;
+    }
+
+    @media #{$mobile-small}{
+        padding: 4rem 0;
+    }
+}
+
+.contacts__inner{
+    display: flex;
+
+    @media #{$mobile}{
+        display: block;
+    }
+}
+
+.contacts__info{
+    width: 44%;
+    max-width: 50rem;
+
+    padding: 3.6rem 0 0;
+
+    margin-left: 2.6rem;
+
+    background-color: rgba($dark-blue, .71);
+    color: $white;
+
+    @media #{$mobile}{
+        width: 80%;
+        max-width: none;
+
+        margin: 3rem auto;
+        padding-bottom: 3.6rem;
+    }
+
+    @media #{$mobile-small}{
+        width: 100%;
+    }
+}
+
+.contacts__text{
+    font-family: $raleway;
+    font-size: 1.5rem;
+
+    color: rgba($white, 0.7);
+
+    margin: 0 3rem 1rem;
+
+    a{
+        color: inherit;
+
+        transition: color .2s linear;
+
+        &:hover{
+            color: lighten(#2e72a1, 15%)
+        }
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.contacts__internet{
+    margin: 3.4rem 0 2.3rem;
+}
+
+.contacts__map{
+    padding: 0 2.2rem;
+    margin-bottom: 2.2rem;
+}
